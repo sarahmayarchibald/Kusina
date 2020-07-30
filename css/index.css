@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-family: 'Red Rose', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(76, 166, 17);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(40, 180, 131);
+}
+
+.section {
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  height: 90vh;
+  position: relative;
+}
+
+.img-box {
+  background-image: 
+  linear-gradient(
+    to right bottom,
+    rgba(76, 166, 17, 0.8),
+    rgba(233, 228, 199, 0.8)),
+    url(/img/kusina12.jpg);
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+}
+
+.title-box {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  text-transform: uppercase;
+}
+
+.title-box img {
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.title-primary {
+  text-align: center;
+}
+
+.title-primary-main {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 4s;
+}
+
+.title-primary-sub {
+  font-size: 1.2rem;
+  letter-spacing: 1rem;
+  animation-name: moveInTop;
+  animation-duration: 3s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* About */
+.card-img-top {
+height: 205px;
+}
+
+/* Menu */
+.menu {
+  background-image: linear-gradient(
+   to right bottom, 
+   rgba(126, 213, 111, 0.8), 
+   rgba(40, 180, 131, 0.8));
+   
+}
+.menu .card {
+  width: 18rem;
+}
+
+.menu .card-title {
+  text-align: center;
+}
+
+/* Contact */
+.contact-box {
+  width: 500px;
+}
+
+.contact-box i {
+  color: rgb(40, 180, 131);
+}
+
+.social-medial {
+  height: 200px;
+}
+
+.contact .card-body {
+  background-image: linear-gradient(
+   to right bottom, 
+   rgba(40, 180, 131, 0.8), 
+   rgba(126, 213, 111, 0.8));
+}
+
+/* Testimonials */
+.testimonials{
+  background-image: linear-gradient(
+   to right bottom, 
+   rgba(40, 180, 131, 0.8), 
+   rgba(126, 213, 111, 0.8));
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.5rem;
+}
+.footer p {
+  display: inline-block;
+  margin: 0 10px;
+}
