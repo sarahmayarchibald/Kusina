@@ -79,8 +79,7 @@ a:hover {
   radial-gradient(
       circle,
       rgba(133, 117, 70, 0.9),
-      rgba(212, 197, 152, 0.9)),       
-    url('../img/Kusina19.jpg');
+      rgba(212, 197, 152, 0.9));
   background-position: top;
   background-size: cover;
   clip-path: circle(33% at 50% 50%);
@@ -137,6 +136,10 @@ a:hover {
 }
 
 /* Menu */
+#menu span {
+  text-decoration: underline;
+}
+
 .card {
   border: none;
 }
